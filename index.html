@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo">ODIN</div>
+        </header>
+        
+            <section class="hero">
+                <h1>Welcome to Odin Project</h1>
+            </section>
+            <aside class="sidebar">
+                <img src="assets/odin-lined.png" alt="Odin Logo">
+            </aside>
+        <section class="form">
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="first">FIRST NAME</label>
+                <input type="text" id="firstname" name="first_name" required>
+
+                <label for="first">LAST NAME</label>
+                <input type="text" id="lastname" name="last_name" required>
+
+                <label for="first">EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required aria-describedby="emailHelp">
+                <small id="emailHelp">We'll never share your email with anyone else.</small>
+
+                <label for="phone">PHONE NUMBER:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required aria-describedby="phoneHelp"/>
+                <small id="phoneHelp">Please enter a 10-digit phone number.</small>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required aria-describedby="passwordHelp"/>
+                <small id="passwordHelp">Password must be at least 8 characters long.</small>
+
+                <!-- Confirm Password Field -->
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required aria-describedby="confirmPasswordHelp"/>
+                <small id="confirmPasswordHelp">Ensure both passwords match.</small>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main> 
+    <footer>
+        <p>Image by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on Unsplash</p>
+    </footer>
+    
+</body>
+</html>
